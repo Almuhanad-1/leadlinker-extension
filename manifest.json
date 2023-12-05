@@ -17,8 +17,12 @@
 
   "content_scripts": [
     {
-      "js": ["scripts/content.js"],
-      "matches": ["<all_urls>"]
+      "js": ["scripts/contentLL.js"],
+      "matches": ["<all_urls>"],
+      "run_at": "document_end"
     }
-  ]
+  ],
+  "background": {
+    "service_worker": "scripts/backgroundLL.js"
+  }
 }

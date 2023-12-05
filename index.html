@@ -6,6 +6,11 @@
     <title>Document</title>
   </head>
   <body>
+    <label for="a">aaaa</label>
+    <input type="checkbox" name="a" id="a" />
+    <label for="b">bbbbb</label>
+    <input type="text" name="b" id="b" />
+
     <p>Contact us at +123 456-7890 or (555) 123-4567 for assistance.</p>
     <svg>Phone number: +1 (234) 567-8901</svg>
     <p>For support, call +1 (800) 555-1234 or (123) 456-7890.</p>
@@ -30,5 +35,9 @@
     <p>10-digit number without separators: 1234567890</p>
     <p>Number with area code: (123) 456-7890 or 123-456-7890</p>
     <!-- <script src="main.js"></script> -->
+    <script>
+      const b = document.getElementById("b");
+      b.value = "bbbb";
+    </script>
   </body>
 </html>
