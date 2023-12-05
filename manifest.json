@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Leadlinker Extension",
+  "version": "1.0",
+  "description": "Turns all phone numbers in a web page into whatsapp links!",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "action": {
+    "default_icon": "images/logo.png",
+    "default_title": "Click to open popup"
+  },
+  "permissions": ["activeTab"],
+
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
